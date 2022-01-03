@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "next/link"
-
+// test
 const Nav = ({ categories }) => {
   return (
     <div>
@@ -26,6 +26,18 @@ const Nav = ({ categories }) => {
               )
             })}
           </ul>
+          <button class="uk-button uk-button-default" type="button">Hover</button>
+          <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
+              <ul class="uk-nav uk-dropdown-nav">
+                  <li class="uk-active"><a href="#">Active</a></li>
+                  <li><a href="#">Item</a></li>
+                  <li class="uk-nav-header">Header</li>
+                  <li><a href="#">Item</a></li>
+                  <li><a href="#">Item</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a href="#">Item</a></li>
+              </ul>
+          </div>
         </div>
       </nav>
     </div>
