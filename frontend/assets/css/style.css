@@ -1,4 +1,12 @@
+ 
 a {
+  text-decoration: none;
+  color: #EEEDE7!important;
+}
+
+a:hover {
+  color: #fff !important;
+  font-weight: bold !important;
   text-decoration: none;
 }
 
@@ -31,11 +39,21 @@ h1 {
 }
 
 .uk-navbar-container {
-  background: #fff !important;
+  background: #08313A !important;
   font-family: Staatliches;
 }
 
 img:hover {
   opacity: 1;
   transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+}
+
+/* Nav */
+.uk-navbar-right {
+  margin-right: 40px;
+}
+
+.uk-navbar-nav {
+  margin-left: 40px;
 }
