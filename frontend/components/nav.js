@@ -15,13 +15,10 @@ const Nav = ({ categories }) => {
           </ul>
         </div>
         <div className="uk-navbar-right">
-          {/*<ul className="uk-navbar-nav">
-            <li>test</li>
-            </ul>*/}
-          <a className="uk-button uk-button-default" href="/">
+          <a id="nav-link" href="/">
             Blog
           </a>
-          <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
+          <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">  
             <ul class="uk-nav uk-dropdown-nav">
                 {categories.map((category) => {
                 return (
@@ -32,8 +29,34 @@ const Nav = ({ categories }) => {
                   </li>
                 )
               })}
-            </ul>
+            </ul> 
           </div>
+          <a id="nav-link" href="/">
+            Shop
+          </a>
+          <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">  
+            <ul class="uk-nav uk-dropdown-nav">
+                {categories.map((category) => {
+                return (
+                  <li key={category.id}>
+                    <Link href={`/category/${category.attributes.slug}`}>
+                      <a className="uk-link-reset">{category.attributes.name}</a>
+                    </Link>
+                  </li>
+                )
+              })}
+            </ul> 
+          </div>
+          <ul>
+            <li>
+              <a id="nav-link" href="/about">About</a>
+            </li>
+            {/*
+            <li>
+              <a id="about-link" href="/about">Reviews</a>
+            </li>
+            */}
+          </ul>
         </div>
       </nav>
     </div>

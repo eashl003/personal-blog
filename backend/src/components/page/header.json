@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_page_headers",
+  "info": {
+    "displayName": "header",
+    "icon": "angle-down"
+  },
+  "options": {},
+  "attributes": {
+    "profile_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "about_descr": {
+      "type": "text"
+    },
+    "contact_email": {
+      "type": "email"
+    }
+  }
+}
